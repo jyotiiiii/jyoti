@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Creative Coding</title>
 </head>
-<body>
-    
-</body>
+<div class="slideshow">
+    <ul class="slides">
+        <li class="slide is-active">
+            <div class="cover"
+                style="background-image: url(https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg?auto=format&q=60&w=1815&h=1020.9375&fit=crop&crop=faces);">
+            </div>
+        </li>
+        <li class="slide">
+            <div class="cover"
+                style="background-image: url(https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80);">
+            </div>
+        </li>
+        <li class="slide">
+            <div class="cover"
+                style="background-image: url(data:image/jpeg;base64,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);">
+            </div>
+        </li>
+    </ul>
+    <div class="arrows">
+        <button class="arrow arrow-prev">
+            <span></span>
+        </button>
+        <button class="arrow arrow-next">
+            <span></span>
+        </button>
+    </div>
+</div>
+<main>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus eleifend tincidunt. Integer lacus orci,
+            ullamcorper vel mi at, vestibulum ultrices quam. Pellentesque dui massa, fringilla id dolor id, imperdiet
+            luctus
+            nisl. Nam vehicula facilisis quam quis vehicula. Sed tincidunt massa nibh, eget varius dui scelerisque in.
+            Donec
+            urna tortor, commodo quis finibus non, vulputate sit amet nisl. Integer consectetur convallis sapien vel
+            rutrum.
+        </p>
+
+        <p>Suspendisse commodo odio magna, tristique semper velit pretium sed. Integer laoreet vestibulum turpis,
+            hendrerit
+            imperdiet nibh egestas at. Etiam eu porttitor magna. Aliquam erat volutpat. Nulla euismod nulla at purus
+            dignissim, vitae mollis elit mollis. Fusce blandit massa sit amet ligula maximus tincidunt. Nullam eu metus
+            vitae
+            nisi ullamcorper varius vitae ac mi.</p>
+
+        <p>Sed et lacus vel sem efficitur dapibus in fringilla est. Vivamus nec varius sem, id finibus eros. Integer
+            magna
+            nulla, tempor non nulla a, porta pretium enim. Quisque volutpat dolor sed arcu posuere, et bibendum ligula
+            suscipit. Morbi pharetra ipsum massa, nec viverra elit dapibus a. Praesent turpis lectus, porttitor ut
+            laoreet at,
+            mattis ac arcu. Phasellus facilisis arcu a condimentum elementum. Ut at lacus interdum, mattis nibh nec,
+            mollis
+            elit. Ut laoreet risus ut nibh aliquam, eu venenatis purus volutpat. Quisque lobortis consectetur mi,
+            accumsan
+            vulputate quam. Integer eget nulla velit. Pellentesque non condimentum lacus.
+        </p>
+    </div>
+</main>
+<!-- <footer>
+    <div class="container">
+        <small>
+        </small>
+    </div>
+</footer> -->
+<script type="text/javascript" src="script.js"></script>
+
 </html>
